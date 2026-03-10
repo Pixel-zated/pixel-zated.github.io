@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Puzzle</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+      }
+
+      .puzzle {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: auto;
+      }
+
+      .puzzle img {
+        width: 150px;
+        border: 1px solid;
+        outline: 1px solid;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div>
+        <h2>Alan's Fish Puzzle</h2>
+      </div>
+
+      <div class="puzzle">
+        <img src="img/puzzle3_D.jpg">
+        <img src="img/puzzle3_A.jpg">
+        <img src="img/puzzle3_G.jpg">
+        <img src="img/puzzle3_H.jpg" class="hidden">
+        <img src="img/puzzle3_J.jpg">
+        <img src="img/puzzle3_B.jpg">
+        <img src="img/puzzle3_C.jpg">
+        <img src="img/puzzle3_F.jpg">
+        <img src="img/puzzle3_I.jpg">
+        <img src="img/puzzle3_E.jpg">
+      </div>
+
+      <div>
+        <p>Date: March 9, 2026</p>
+      </div>
+    </div>
+  </body>
+</html>
