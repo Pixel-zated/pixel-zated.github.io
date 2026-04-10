@@ -17,30 +17,77 @@ body {
     height: 100vh;
     text-align: center;
 }
+
 .container {
     max-width: 500px;
 }
+
 img {
     width: 100%;
     max-width: 400px;
     margin-bottom: 20px;
 }
+
 h1 {
     margin: 10px 0 5px;
     font-size: 32px;
     font-weight: 600;
 }
+
 p {
     margin: 0;
     font-size: 16px;
     color: #888;
 }
+
+#discord {
+    display: inline-flex;
+    align-items: center;
+    background-color: #5865F2;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#discord:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.discord-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.discord-text span:first-child {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.discord-text span:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
 </style>
 </head>
 <body>
 <div class="container">
-    <img src="logo.png" alt="UnitySMP Logo">
-    <p>Under Construction</p>
+<img src="logo.png" alt="UnitySMP Logo">
+<p>Under Construction</p>
+<a href="https://www.discord.gg/THwThHjwGp" target="_blank" style="text-decoration: none;">
+<div id="discord">
+<img src="discord.svg" alt="Discord" style="width: 32px; height: 32px; margin-right: 12px; filter: invert(1);">
+<div class="discord-text">
+<span>Join our</span>
+<span>Discord</span>
+</div>
+</div>
+</a>
 </div>
 </body>
 </html>
