@@ -1,93 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UnitySMP - Under Construction</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b0b0b;
-    color: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnitySMP - Under Construction</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-.container {
-    max-width: 500px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
 
-img {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
-}
+    .container {
+      max-width: 500px;
+    }
 
-h1 {
-    margin: 10px 0 5px;
-    font-size: 32px;
-    font-weight: 600;
-}
+    .logo {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
 
-p {
-    margin: 0;
-    font-size: 16px;
-    color: #888;
-}
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 32px;
+      font-weight: 600;
+    }
 
-#discord {
-    display: inline-flex;
-    align-items: center;
-    background-color: #5865F2;
-    color: #fff;
-    padding: 10px 16px;
-    border-radius: 12px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    width: 150px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: #888;
+    }
 
-#discord:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-}
+    .discord-link {
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
 
-.discord-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
+    .discord-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #5865F2;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      width: 150px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
 
-.discord-text span:first-child {
-    font-size: 16px;
-    opacity: 0.8;
-}
+    .discord-button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    }
 
-.discord-text span:last-child {
-    font-size: 18px;
-    font-weight: 600;
-}
-</style>
+    .discord-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+      filter: invert(1);
+    }
+
+    .discord-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      text-align: left;
+    }
+
+    .discord-small {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    .discord-large {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-<img src="logo.png" alt="UnitySMP Logo">
-<p>Under Construction</p>
-<a href="https://www.discord.gg/THwThHjwGp" target="_blank" style="text-decoration: none;">
-<div id="discord">
-<img src="discord.svg" alt="Discord" style="width: 32px; height: 32px; margin-right: 12px; filter: invert(1);">
-<div class="discord-text">
-<span>Join our</span>
-<span>Discord</span>
-</div>
-</div>
-</a>
-</div>
+  <div class="container">
+    <img src="logo.png" alt="UnitySMP Logo" class="logo" />
+    <p>Under Construction</p>
+
+    <a href="https://www.discord.gg/THwThHjwGp" target="_blank" class="discord-link" rel="noopener noreferrer">
+      <div class="discord-button">
+        <img src="discord.svg" alt="Discord" class="discord-icon" />
+        <div class="discord-text">
+          <span class="discord-small">Join our</span>
+          <span class="discord-large">Discord</span>
+        </div>
+      </div>
+    </a>
+  </div>
 </body>
 </html>
